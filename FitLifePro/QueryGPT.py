@@ -1,7 +1,7 @@
 import openai
 from PersonObject import Person
 
-openai.api_key = "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"
+openai.api_key = "api-key-here"
 def QueryGPT(curUser, messages):
     if len(messages) == 0:
         gptInput = """You are a great personal trainer who likes to help their clients develop a workout plan that allows them to reach their fitness goals as fast as possible. 
