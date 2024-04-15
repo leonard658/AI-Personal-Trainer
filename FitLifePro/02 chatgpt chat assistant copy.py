@@ -1,7 +1,7 @@
 import openai
 from PersonObject import Person
 
-openai.api_key = "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"
+openai.api_key = "api-key-here"
 
 messages = []
 system_msg = input("What type of chatbot would you like to create?\n")
