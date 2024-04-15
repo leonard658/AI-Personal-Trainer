@@ -5,6 +5,7 @@ Open folder in IDE
 Install all required software (can be seen below)  
 Open QueryGPT.py and replace "gpt-key-here" with your own OpenAi API key (can be found on OpenAi website)  
 Run app.py file and open flask app from console  
+Enjoy a personalized workout plan  
 
 
 
