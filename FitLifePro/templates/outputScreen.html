@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Plan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #777;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Workout Plan for {{name}}</h1>
+        <p><strong>Warmup: </strong> {{workout.warmup}}</p>
+        <p><strong>Cool Down: </strong> {{workout.cooldown}}</p>
+        <h2>Exercises:</h2>
+        <ul>
+            <!-- Exercises will be dynamically added here -->
+            {% for exer in workout.exercises %}
+                <li>
+                    <label><strong>Name:</strong> {{exer.name}}</label><br>
+                    <label><strong>Sets:</strong> {{exer.sets}}</label><br>
+                    <label><strong>Reps:</strong> {{exer.reps}}</label><br>
+                    <label><strong>Muscles Hit:</strong> {{exer.musclesHit}}</label>
+                </li>
+            {% endfor %} 
+        </ul>
+    </div>
+</body>
+</html>
