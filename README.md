@@ -15,5 +15,6 @@ OpenAI Library - install with "pip install openai" in console
 Contains all files related to project  
 User documentation gives instructions on how to use the app when opened  
 Unit tests can be found in the folder in TestObjects.py  
+This is a working prototype  
 Contact Info - leonard.658@osu.edu
 
