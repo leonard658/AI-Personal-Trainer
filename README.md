@@ -1,4 +1,4 @@
-# FitLifePro AI powered Personal Trainer
+# LifeFitPro AI powered Personal Trainer
 ### Instructions:
 Download the project folder  
 Open folder in IDE  
