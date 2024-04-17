@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = "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"
+openai.api_key = "api-key-here"
 
 gptInput = """You are a great personal trainer who likes to help their clients develop a workout plan that allows them to reach their fitness goals as fast as possible. 
 I will give you a client's: 
